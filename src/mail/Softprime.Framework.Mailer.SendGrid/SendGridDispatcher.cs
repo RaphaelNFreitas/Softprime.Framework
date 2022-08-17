@@ -7,6 +7,7 @@ using Softprime.Framework.Mailer.Helpers;
 using Softprime.Framework.Mailer.Models;
 using SendGrid;
 using SendGrid.Helpers.Mail;
+using Attachment = System.Net.Mail.Attachment;
 
 namespace Softprime.Framework.Mailer.SendGrid
 {
@@ -19,7 +20,13 @@ namespace Softprime.Framework.Mailer.SendGrid
             _sendGridSettings = sendGridSettings;
         }
 
-        public async Task<MailerResponse> Send(MailAddress from, MailAddress to, string subject, string htmlContent, string plainTextContent = null, System.Net.Mail.Attachment[] attachments = null)
+        public async Task<MailerResponse> Send(MailAddress from, 
+            MailAddress to, 
+            string subject, 
+            string htmlContent, 
+            string plainTextContent = null, 
+            MailPriority priority = MailPriority.Normal, 
+            Attachment[] attachments = null)
         {
             var client = new SendGridClient(_sendGridSettings.ApiKey);
 

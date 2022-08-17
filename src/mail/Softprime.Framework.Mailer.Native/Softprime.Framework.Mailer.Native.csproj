@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net48</TargetFrameworks>
+		<Authors>Marcelo Paiva</Authors>
+		<Company>Softprime</Company>
+		<Product></Product>
+		<Description>Sender da SMTP nativo do .NET para envio de E-mails utilizando a biblioteca Softprime.Framework.Mailer</Description>
+		<Copyright>Softprime</Copyright>
+		<PackageProjectUrl>https://github.com/softprime/Softprime.Framework</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/softprime/Softprime.Framework</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Softprime;Framework;Mail;Email;Mailer;Sendgrid</PackageTags>
+		<PackageIcon>logo-nuget.png</PackageIcon>
+		<PackageIconUrl />
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>2.0.0</Version>
+		<PackageLicenseExpression></PackageLicenseExpression>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="logo-nuget.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Softprime.Framework.Mailer\Softprime.Framework.Mailer.csproj" />
+	</ItemGroup>
+
+</Project>

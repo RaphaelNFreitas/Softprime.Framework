@@ -6,6 +6,12 @@ namespace Softprime.Framework.Mailer
 {
     public interface ISoftprimeMailerDispatcher
     {
-        Task<MailerResponse> Send(MailAddress from, MailAddress to, string subject, string htmlContent, string plainTextContent = null, Attachment[] attachments = null);
+        Task<MailerResponse> Send(MailAddress from, 
+            MailAddress to, 
+            string subject, 
+            string htmlContent, 
+            string plainTextContent = null,
+            MailPriority priority = MailPriority.Normal,
+            Attachment[] attachments = null);
     }
 }

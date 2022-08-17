@@ -6,6 +6,11 @@ namespace Softprime.Framework.Mailer
 {
     public interface ISoftprimeMailer
     {
-        Task<MailerResponse> Send<T>(string templateKey, T model, string subject, string plainTextContent = null, Attachment[] attachments = null) where T : MailerModelBase;
+        Task<MailerResponse> Send<T>(string templateKey, 
+            T model, 
+            string subject, 
+            string plainTextContent = null,
+            MailPriority priority = MailPriority.Normal,
+            Attachment[] attachments = null) where T : MailerModelBase;
     }
 }

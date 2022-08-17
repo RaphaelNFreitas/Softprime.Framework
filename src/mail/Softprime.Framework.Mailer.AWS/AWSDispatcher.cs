@@ -24,6 +24,7 @@ namespace Softprime.Framework.Mailer.AWS
             string subject, 
             string htmlContent, 
             string plainTextContent = null,
+            MailPriority priority = MailPriority.Normal,
             Attachment[] attachments = null)
         {
             try

@@ -24,10 +24,15 @@ namespace Softprime.Framework.Mailer
         }
         
             
-        public virtual async Task<MailerResponse> Send<T>(string templateKey, T model, string subject, string plainTextContent = null, Attachment[] attachments = null) where T : MailerModelBase
+        public virtual async Task<MailerResponse> Send<T>(string templateKey, 
+            T model, 
+            string subject, 
+            string plainTextContent = null, 
+            MailPriority priority = MailPriority.Normal, 
+            Attachment[] attachments = null) where T : MailerModelBase
         {
             var result = await _engine.CompileRenderAsync(templateKey, model);
-            return await _dispatcher.Send(new MailAddress(_settings.DefaultFromEmail, _settings.DefaultFromName), model.To, subject, result, plainTextContent, attachments);
+            return await _dispatcher.Send(new MailAddress(_settings.DefaultFromEmail, _settings.DefaultFromName), model.To, subject, result, plainTextContent, priority, attachments);
         }
 
     }

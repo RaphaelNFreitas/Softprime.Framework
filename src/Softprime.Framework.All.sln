@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softprime.Framework.Api.Dto", "api\Softprime.Framework.Api.Dto\Softprime.Framework.Api.Dto.csproj", "{51764D6B-4C80-4DAA-B59D-208F85C3A024}"
 EndProject
@@ -33,18 +33,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softprime.Framework.Mailer"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softprime.Framework.Mailer.AWS", "mail\Softprime.Framework.Mailer.AWS\Softprime.Framework.Mailer.AWS.csproj", "{7ADC4797-BB52-499F-B768-24652C2C066B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softprime.Framework.Mailer.SendGrid", "mail\Softprime.Framework.Mailer.SendGrid\Softprime.Framework.Mailer.SendGrid.csproj", "{0CECFE04-5C22-4C66-8EF8-19526D95A0BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softprime.Framework.Mailer.SendGrid", "mail\Softprime.Framework.Mailer.SendGrid\Softprime.Framework.Mailer.SendGrid.csproj", "{0CECFE04-5C22-4C66-8EF8-19526D95A0BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "multitenant", "multitenant", "{AFBD5E7A-1DD6-4376-865D-E7EFA57682FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softprime.Framework.Multitenancy", "multitenant\Softprime.Framework.Multitenancy\Softprime.Framework.Multitenancy.csproj", "{DA35F2C2-1552-439C-8128-7A921533A669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softprime.Framework.Multitenancy", "multitenant\Softprime.Framework.Multitenancy\Softprime.Framework.Multitenancy.csproj", "{DA35F2C2-1552-439C-8128-7A921533A669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softprime.Framework.EF6", "data\Softprime.Framework.EF6\Softprime.Framework.EF6.csproj", "{4CB0D6A4-E9C2-4338-B901-A3575749DE40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softprime.Framework.EF6", "data\Softprime.Framework.EF6\Softprime.Framework.EF6.csproj", "{4CB0D6A4-E9C2-4338-B901-A3575749DE40}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E2AB166D-DB04-44EF-898D-DE264766E567}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.txt = LICENSE.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softprime.Framework.Mailer.Native", "mail\Softprime.Framework.Mailer.Native\Softprime.Framework.Mailer.Native.csproj", "{83430B9C-E0C9-4898-A717-962438D71D1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,6 +110,10 @@ Global
 		{4CB0D6A4-E9C2-4338-B901-A3575749DE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CB0D6A4-E9C2-4338-B901-A3575749DE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CB0D6A4-E9C2-4338-B901-A3575749DE40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83430B9C-E0C9-4898-A717-962438D71D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83430B9C-E0C9-4898-A717-962438D71D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83430B9C-E0C9-4898-A717-962438D71D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83430B9C-E0C9-4898-A717-962438D71D1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +133,7 @@ Global
 		{0CECFE04-5C22-4C66-8EF8-19526D95A0BE} = {3AF16ADE-8FF1-4125-83E8-BAFA5E54B45C}
 		{DA35F2C2-1552-439C-8128-7A921533A669} = {AFBD5E7A-1DD6-4376-865D-E7EFA57682FE}
 		{4CB0D6A4-E9C2-4338-B901-A3575749DE40} = {91661D33-E018-4ADE-AB71-593989A82FDC}
+		{83430B9C-E0C9-4898-A717-962438D71D1A} = {3AF16ADE-8FF1-4125-83E8-BAFA5E54B45C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97DCF620-A4A1-4A9F-A727-53BC8F913A7F}
